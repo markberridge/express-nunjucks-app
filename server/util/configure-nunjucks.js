@@ -2,7 +2,7 @@ const nunjucks = require('nunjucks');
 
 module.exports = (app) => {
 
-  const env = nunjucks.configure('views', {
+  const env = nunjucks.configure('server/views', {
     autoescape: true,
     cache: false,
     express: app
